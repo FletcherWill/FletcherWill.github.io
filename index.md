@@ -22,4 +22,4 @@ permalink: /
 
 
 ---
-I am a 3rd year PhD student in the Brown University Computer Science Department advised by D. Ellis Hershkowitz. I am interested in theoretical computer science, especially graph algorithms, metric embeddings, and clustering. Prior to joining Brown, I received my BA from Carleton College and worked as a software engineer at Amazon.
+I am a 3rd year PhD student in the Brown University Computer Science Department advised by [D. Ellis Hershkowitz](https://dhershko.github.io). I am interested in theoretical computer science, especially graph algorithms, metric embeddings, and clustering. Prior to joining Brown, I received my BA from Carleton College and worked as a software engineer at Amazon.
