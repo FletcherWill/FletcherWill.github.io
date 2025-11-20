@@ -1,19 +1,16 @@
 # Site settings
-title:       D Ellis Hershkowitz
-author:      D Ellis Hershkowitz
+title:       Willem Fletcher
+author:      Willem Fletcher
 baseurl:     ""
-url:         "https://dhershko.github.io/"
-CVurl: /assets/CV/DEllisHershkowitzCV.pdf
+url:         "https://fletcherwill.github.io/"
 notesurl: /assets/notes/
 figuresurl: /assets/figures/
 
 header_pages:
-  - publications.md
-  - teaching.md
   - index.md
-  - group.md
+  - publications.md
 
-keywords: ['Ellis Hershkowitz', 'D Ellis Hershkowitz', 'D. Ellis Hershkowitz', 'David Ellis Hershkowitz', 'CS', 'computer science', 'CMU', 'Carnegie Mellon']
+keywords: ['Willem Fletcher', 'Will Fletcher', 'CS', 'computer science', 'Brown University']
 
 # account settings
 google_scholar: JR_KR7MAAAAJ
