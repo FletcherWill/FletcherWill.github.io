@@ -64,3 +64,9 @@ title: Publications
     venue="The Electronic Journal of Combinatorics"
     pdfLink="https://www.combinatorics.org/ojs/index.php/eljc/article/view/v29i4p17/pdf"
      %}<p></p>
+
+ {% include publication.html 
+    title="Improved Upper Bound on the Linear Turán Number of the Crown"
+    shortVenue="arXiv 2021"
+    pdfLink="https://arxiv.org/abs/2109.02729"
+     %}<p></p>
