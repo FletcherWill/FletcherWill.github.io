@@ -40,3 +40,11 @@ title: Publications
     venue="Conference on Neural Information Processing Systems"
     pdfLink="https://arxiv.org/pdf/2406.05066"
      %}<p></p>
+
+{% include publication.html 
+    title="Real-time computing and robust memory with deterministic chemical reaction networks"
+    authors="T. Klinge, J. I. Lathrop, D. A. Nye, M. Rayman"
+    shortVenue="NACO"
+    venue="Natural Computing"
+    pdfLink="https://arxiv.org/pdf/2109.02896"
+     %}<p></p>
