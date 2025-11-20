@@ -44,7 +44,15 @@ title: Publications
 {% include publication.html 
     title="Real-time computing and robust memory with deterministic chemical reaction networks"
     authors="T. Klinge, J. I. Lathrop, D. A. Nye, M. Rayman"
-    shortVenue="NACO"
+    shortVenue="NACO 2024"
     venue="Natural Computing"
     pdfLink="https://arxiv.org/pdf/2109.02896"
+     %}<p></p>
+
+ {% include publication.html 
+    title="Crowns in Linear 3-Graphs of Minimum Degree 4"
+    authors="A. Carbonero, J. Guo, A. Gyárfás, R. Wang, S. Yan"
+    shortVenue="EJC 2022"
+    venue="The Electronic Journal of Combinatorics"
+    pdfLink="https://www.combinatorics.org/ojs/index.php/eljc/article/view/v29i4p17/pdf"
      %}<p></p>
