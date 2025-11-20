@@ -34,6 +34,14 @@ title: Publications
      %}<p></p>
 
 {% include publication.html 
+    title="Graphs with many hamiltonian paths"
+    authors="E. Carlson, M. Montee, C. Nguyen, J. Renders, X. Zhang"
+    shortVenue="Involve 2025"
+    venue="Involve, a Journal of Mathematics"
+    pdfLink="https://arxiv.org/pdf/2106.13372"
+     %}<p></p>
+
+{% include publication.html 
     title="Efficient Centroid-Linkage Clustering"
     authors="M.H. Bateni, L. Dhulipala, K. Gowda, D. Ellis Hershkowitz, R. Jayaram, J. Lacki"
     shortVenue="NeurIPS 2024"
