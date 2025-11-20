@@ -3,17 +3,17 @@ $font-family: 'Inter', sans-serif;
 $heading-font-family: 'Inter', sans-serif;
 $monospace-font-family: monospace;
 
-$base-font-size: 9px;
-$base-font-viewport-small: 11px;
-$base-font-viewport-medium: 13px;
+$base-font-size: 12px;
+$base-font-viewport-small: 14px;
+$base-font-viewport-medium: 16px;
 $base-font-viewport-large: 18px;
 
-$blog-font-family: 'Merriweather';
+$blog-font-family: 'Lora', serif;
 $drop-cap: false;
 
 $bio-name-font-size: 3.5rem;
 
-$line-height: 1.5;
+$line-height: 1.6;
 $heading-line-height: 1.25;
 
 $bold-font-weight: bold;
@@ -29,29 +29,29 @@ $h6: .75rem;
 $abbr-border-bottom: 1px black dotted;
 
 // Page width
-$measure-width: 48rem;
+$measure-width: 50rem;
 
 // Sidenote width
 $blog-width: 0.7;
 $sidenote-width: 0.25;
 
 // Viewport widths
-$viewport-small: 32rem;
+$viewport-small: 34rem;
 $viewport-medium: 48rem;
 $viewport-large: 64rem;
 
-// Old Alex Colors
-$background-color: #f9f7f7;
-$new-tag-color: #ec9106;
-$info-tag-color: saturate(#2482c5,20%);
-$link-color: saturate(#2482c5,20%);
+// Colors
+$background-color: #fdfdfd;
+$new-tag-color: #d95f02;
+$info-tag-color: #4a648c;
+$link-color: #4a648c;
 
-$background-color-dm: #111019;
-$new-tag-color-dm: #e8b000;
-$info-tag-color-dm: saturate(#4ca2df,100%);
-$link-color-dm: saturate(#4ca2df,100%);
-$figure-border-color: #3193cc;
-$bio-border-color: #3193cc;
+$background-color-dm: #181a1b;
+$new-tag-color-dm: #f28c28;
+$info-tag-color-dm: #89a4d4;
+$link-color-dm: #89a4d4;
+$figure-border-color: #4a648c;
+$bio-border-color: #4a648c;
 
 
 $latex-environment-border-color: $new-tag-color;
