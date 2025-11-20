@@ -22,10 +22,7 @@ permalink: /
 
 
 ---
-
-Hi there!
-
-I am an Assistant Professor in the Brown University Computer Science Department. I'm broadly interested in theoretical computer science but I'm especially keen on graph-theoretic questions in approximation algorithms, online algorithms, distributed algorithms and metric embeddings.
+I am a PhD student in the Brown University Computer Science Department. I'm broadly interested in theoretical computer science but I'm especially keen on graph-theoretic questions in approximation algorithms, online algorithms, distributed algorithms and metric embeddings.
 
 I completed my PhD in computer science in the Carnegie Mellon Computer Science Department. After that, I spent a lovely year as a postdoc in the ETH Zürich Math Department in the Mathematical Optimization Group.
 
