@@ -1,25 +1,15 @@
-{% if page.name == 'index.md' %}
-	<a class="nav-active" href="{{ '/' | relative_url }}">Home</a> </a> 
+{% assign url = page.url | remove: 'index.html' %}
+
+{% if url == "/" %}
+  <a class="nav-active" href="{{ '/' | relative_url }}">Home</a>
 {% else %}
-	<a class="nav-link" href="{{ '/' | relative_url }}">Home</a> </a> 
+  <a class="nav-link" href="{{ '/' | relative_url }}">Home</a>
 {% endif %}
 
-{% assign default_paths = site.pages | map: "path" %}
-{% assign page_paths = site.header_pages | default: default_paths %}
+<span class="p1">/</span>
 
-{% for path in page_paths %}
-    {% assign item = site.pages | where: "path", path | first %}
-
-    {% if item.title and page.title == item.title %}
-        <span class="p1">/</span><a class="nav-active" href="{{ item.url | relative_url }}">{{ item.shorttitle }}</a>
-    {% elsif item.title %}
-        <span class="p1">/</span><a class="nav-link" href="{{ item.url | relative_url }}">{{ item.shorttitle }}</a> 
-    {% endif %}
-    
-
-{% endfor %}
-
-<!-- Link to CV -->
-<span class="p1">/</span> <a class="nav-link" href=" {{site.CVurl | relative_url}}"> CV </a> 
-
-
+{% if page.url == "/pubs.html" %}
+  <a class="nav-active" href="{{ '/pubs.html' | relative_url }}">Publications</a>
+{% else %}
+  <a class="nav-link" href="{{ '/pubs.html' | relative_url }}">Publications</a>
+{% endif %}
