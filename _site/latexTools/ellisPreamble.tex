@@ -1,0 +1,97 @@
+%USED PACKAGES
+\usepackage{algorithm}
+\usepackage[noend]{algpseudocode}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{bm}
+\usepackage{bbm}
+\usepackage{bbold}
+\usepackage{booktabs}
+\usepackage{caption}
+\usepackage{enumerate}
+\usepackage{float}
+%\usepackage{fullpage} %Messes up orgmode fragments, making them take the whole page
+\usepackage[colorlinks,citecolor=blue,linkcolor=BrickRed]{hyperref}
+\usepackage{cleveref}
+\usepackage[utf8]{inputenc}
+%\usepackage[framemethod=TikZ]{mdframed} Seems to change color in orgmode
+\usepackage{parskip}
+\usepackage{subcaption}
+\usepackage{times}
+\usepackage[normalem]{ulem}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage{xspace}
+\usepackage[numbers,sort&compress]{natbib}
+
+%Theorems
+\newtheorem{theorem}{Theorem}
+\newtheorem{claim}{Claim}
+\newtheorem{osbservation}{Observation}
+\newtheorem{lemma}{Lemma}
+\newtheorem{definition}{Definition}
+
+%First argument is file, second is scale
+\newcommand{\qFig}[2]{
+\begin{figure}[H]
+\centering
+\includegraphics[scale=#2]{#1}
+\end{figure}
+}
+
+%Commands for comments
+\newcounter{note}[section]
+\renewcommand{\thenote}{\thesection.\arabic{note}}
+
+\newcommand{\enote}[1]{\refstepcounter{note}$\ll${\bf Ellis~\thenote:}
+	{\sf \color{blue} #1}$\gg$\marginpar{\tiny\bf EH~\thenote}}
+
+%------NOTATION COMMANDS------
+\DeclareMathOperator*{\argmin}{arg\,min}
+\DeclareMathOperator*{\argmax}{arg\,max}
+\newcommand{\bc}[1]{&{\text{$\left(\text{By #1} \right)$}}}%\bc
+\newcommand{\bcc}[1]{&&{\text{$\left(\text{By #1} \right)$}}}%\bc
+\newcommand{\Cov}{\mathrm{Cov}}%Covariance
+\newcommand{\defeq}{\overset{\text{def}}{=}}
+\newcommand{\E}{\mathop{{}\mathbb{E}}}%Expectation
+\newcommand{\mb}{\mathbb}
+\newcommand{\modd}[1]{~(\text{mod } #1 )}
+\newcommand{\moddd}[1]{~\text{mod } #1 }
+\DeclareMathOperator*{\OPT}{\text{OPT}} %Opt
+\newcommand{\poly}{\text{poly}}
+\newcommand{\rank}{\ensuremath{\mathrm{Rank}}}%Rank
+\newcommand{\spn}{\ensuremath{\mathrm{Span}}}%Span
+\newcommand{\st}{\text{\xspace s.t. \xspace}}
+\newcommand{\todo}{{\color{red} \textbf{TODO}}}
+\newcommand{\Var}{\mathrm{Var}}%Variance
+\newcommand{\eps}{\epsilon}%Variance
+
+
+%Mathcal shortcuts
+\newcommand{\mcA}{\mathcal{A}}
+\newcommand{\mcB}{\mathcal{B}}
+\newcommand{\mcC}{\mathcal{C}}
+\newcommand{\mcD}{\mathcal{D}}
+\newcommand{\mcE}{\mathcal{E}}
+\newcommand{\mcF}{\mathcal{F}}
+\newcommand{\mcG}{\mathcal{G}}
+\newcommand{\mcH}{\mathcal{H}}
+\newcommand{\mcI}{\mathcal{I}}
+\newcommand{\mcJ}{\mathcal{J}}
+\newcommand{\mcK}{\mathcal{K}}
+\newcommand{\mcL}{\mathcal{L}}
+\newcommand{\mcM}{\mathcal{M}}
+\newcommand{\mcN}{\mathcal{N}}
+\newcommand{\mcO}{\mathcal{O}}
+\newcommand{\mcP}{\mathcal{P}}
+\newcommand{\mcQ}{\mathcal{Q}}
+\newcommand{\mcR}{\mathcal{R}}
+\newcommand{\mcS}{\mathcal{S}}
+\newcommand{\mcT}{\mathcal{T}}
+\newcommand{\mcU}{\mathcal{U}}
+\newcommand{\mcV}{\mathcal{V}}
+\newcommand{\mcW}{\mathcal{W}}
+\newcommand{\mcX}{\mathcal{X}}
+\newcommand{\mcZ}{\mathcal{Z}}
+
+\allowdisplaybreaks
+
+\endinput

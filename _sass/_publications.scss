@@ -1,0 +1,60 @@
+.conferenceShort {
+    text-decoration: none;
+    float: right;
+    font-weight: bold;
+    color: #990000;
+    /*For shrinking on mobile*/
+    @media print, screen and (max-width: 440px) {
+    font-size: 8px;
+
+    }
+}
+
+.paperLineTitle {
+    font-weight: bolder;
+    // font-size: .75em;
+    /*min-width: 382px;*/
+    /*For shrinking on mobile*/
+    @media print, screen and (max-width: 440px) {
+    font-size: 8px;
+
+    }
+}
+
+.paperLineAuthors{
+  max-width: 38em;
+    // font-size: .75em;
+    /*For shrinking on mobile*/
+    @media print, screen and (max-width: 440px) {
+    font-size: 8px;
+
+    }
+}
+
+.paperTitle{
+    // font-size: .75em;
+}
+
+.conferenceLong {
+    text-decoration: none;
+    font-style: italic;
+    max-width: 35em;
+    // font-size: .75em;
+    /*For shrinking on mobile*/
+    @media print, screen and (max-width: 440px) {
+    font-size: 8px;
+
+    }
+}
+
+.award {
+    font-weight: bolder;
+    font-style: bold;
+    max-width: 35em;
+    color: #7cbc40;
+    /*For shrinking on mobile*/
+    @media print, screen and (max-width: 440px) {
+    font-size: 8px;
+
+    }
+}

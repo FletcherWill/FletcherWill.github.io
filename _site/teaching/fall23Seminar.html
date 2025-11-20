@@ -1,0 +1,315 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <!-- <title>CMSC451: Design and Analysis of Computer Algorithms</title> -->
+    <link rel="stylesheet" href="/stylesheets/classstyles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  </head>
+  <body>
+    <div class="wrapper">
+      <section><h1 id="csci-1952c-frontiers-of-graph-algorithms-seminar">CSCI 1952C: Frontiers of Graph Algorithms Seminar</h1>
+<p><em>Fall 2023, Brown University</em></p>
+
+<p><strong>Course Syllabus</strong><br />See <a href="/teaching/fall23Seminar/syl.pdf">here</a>; this mostly summarizes this webpage<br /></p>
+
+<p><strong>Time and Location</strong><br />Wednesday, 3:00pm – 5:30pm, CIT 241<br /></p>
+
+<p><strong>Instructor</strong><br />
+<a href="https://dhershko.github.io/">Ellis Hershkowitz</a>, CIT 507<br /></p>
+
+<p><strong>Office Hours</strong><br />
+Wednesday, 2:00pm-3:00pm, CIT 507</p>
+
+<!-- **Teaching Assistants** -->
+
+<h3 id="course-description">Course Description</h3>
+
+<p>Graphs are one of the most powerful and flexible algorithmic tools. Likewise, graph algorithms remains a primary focus of modern algorithms research. This course will sample major results from contemporary paradigms of graph algorithms. Particular attention will be paid to techniques in graph sparsification and how these techniques have helped to recently solve open problems in algorithms. Planned topics include: metric embeddings, expander decompositions, iterative rounding, edge-degree constrained subgraphs and palette sparsification.</p>
+
+<p>This course is aimed at current and potential future graduate students considering proof-based research in algorithms. Each student will be responsible for reading and presenting a paper with the goal of better understanding how contemporary research in theoretical computer science is both done and best communicated.</p>
+
+<p><strong>Prerequisites:</strong></p>
+
+<p>The only official pre-requisites for the class is either <a href="https://brown-cs1570.github.io/">CSCI1570</a> or <a href="https://cs.brown.edu/courses/cs155/">CSCI1550</a> (<a href="https://cs.brown.edu/courses/csci1450/">CSCI1450</a> also works).</p>
+
+<p>That said, you should be “mathematically mature” and have experience with formal proofs. Ideally, you have some background in and comfort with proof-based algorithm design and analysis. A strong background in probability will also be helpful for many of the papers.</p>
+
+<p>If you’re unsure if you have an appropriate background feel free to reach out and we can discuss!</p>
+
+<h3 id="logistics">Logistics</h3>
+<p>Each student (or pair of students) will be assigned one of the below papers. Student pairs will be assigned to the more complicated papers. The below summarizes everything you’ll have to do for this class:</p>
+<ul>
+  <li>Fill out form of top 3 papers after shopping period</li>
+  <li>Read your assigned paper</li>
+  <li>Prepare and give your talk on the paper with at least 6 pre-prepared questions for the audience in your talk</li>
+  <li>Schedule a time the week before your talk to practice the introduction portion with me (and do so)</li>
+  <li>Actively participate in class and give feedback at the end of each talk</li>
+</ul>
+
+<p>Here’s a recommended rough breakdown of the timing of your talk:</p>
+<ul>
+  <li><em>Introduction:</em> ~30 minutes</li>
+  <li><em>Break:</em> ~20 minutes</li>
+  <li><em>Technical Details:</em> ~60 minutes</li>
+  <li><em>Feedback from the Class:</em> ~15 minutes</li>
+</ul>
+
+<h3 id="schedule">Schedule</h3>
+<p>You should be able to access the papers through the links below using your Brown credentials (let me know if you have trouble). I’ll give the first two lectures and the first student lecture will be on September 20th. You definitely don’t need all the relevant background to read a given paper but in deciding what papers to choose you may find it easier to read papers in which you have some background. Many of these papers have nicely-digested talks or scribe notes summarizing them that I’ve tried to provide where possible.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Date</th>
+      <th>Topic</th>
+      <th>Paper</th>
+      <th>Presenter</th>
+      <th>Notes</th>
+      <th>Relevant Background</th>
+      <th>Useful Links</th>
+      <th>Slide Links</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Sep 6 (Wed)</td>
+      <td>Overview of Class and Papers</td>
+      <td> </td>
+      <td><strong>Ellis</strong></td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td><a href="/teaching/fall23Seminar/ClassAndPapersOverview.pdf">First day slides</a></td>
+    </tr>
+    <tr>
+      <td><strong>Distance Sparsification</strong></td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Sep 13 (Wed)</td>
+      <td>How to Read, Present and Listen to Theory + Spanners</td>
+      <td><a href="https://link.springer.com/article/10.1007/BF02189308">On Sparse Spanners of Weighted Graphs (Paper for Class)</a></td>
+      <td><strong>Ellis</strong></td>
+      <td> </td>
+      <td>Graph Girth</td>
+      <td><a href="https://arxiv.org/abs/1909.03152">This spanners survey</a> by Ahmed et al.</td>
+      <td><a href="/teaching/fall23Seminar/GiveATalkTalk.pdf">Reading, Presenting and Listening to Theory Slides</a>, <a href="/teaching/fall23Seminar/SpannersMiniTalk.pdf">Spanners Mini-Talk Slides</a></td>
+    </tr>
+    <tr>
+      <td>Sep 20 (Wed)</td>
+      <td>Steiner Point Removal</td>
+      <td><a href="https://arxiv.org/abs/1808.02800">Steiner Point Removal with Distortion O(log k) using the Relaxed-Voronoi Algorithm</a></td>
+      <td><strong>Howie</strong></td>
+      <td>Focus on first 4 sections</td>
+      <td>Randomized Algorithms, Probability, Concentration Bounds</td>
+      <td><a href="https://u.cs.biu.ac.il/~filtsea/video/SPR_video.mp4">A talk by Arnold on this</a></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Sep 27 (Wed)</td>
+      <td>CKR Cutting Scheme (and 0-Extension)</td>
+      <td><a href="https://dl.acm.org/doi/abs/10.5555/365411.365413">Approximation Algorithms for the 0-Extension Problem</a></td>
+      <td><strong>Will</strong></td>
+      <td> </td>
+      <td>Randomized Algorithms, Probability, Concentration Bounds</td>
+      <td><a href="https://www.cs.cmu.edu/~anupamg/metrics/lectures/lec9.ps">Scribe notes of Anupam Gupta+Shobha Venkataraman</a></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Oct 4 (Wed)</td>
+      <td>Tree Embeddings</td>
+      <td><a href="https://www.sciencedirect.com/science/article/pii/S0022000004000637">A Tight Bound on Approximating Arbitrary Metrics by Tree Metrics</a></td>
+      <td><strong>Yeganeh</strong></td>
+      <td>Makes use of CKR cutting scheme from previous week. Consider presenting an application from the relevant chapter in <a href="https://www.designofapproxalgs.com/book.pdf">this book</a></td>
+      <td>Randomized Algorithms, Probability, Concentration Bounds</td>
+      <td><a href="https://www.cs.jhu.edu/~mdinitz/classes/ApproxAlgorithms/Spring2019/Lectures/lecture15.pdf">Scribe notes by Mike Dinitz</a></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Flow/Cut Sparsification</strong></td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Oct 11 (Wed)</td>
+      <td>Sampling-Based Cut Sparsification</td>
+      <td><a href="https://people.csail.mit.edu/karger/Papers/stcut.pdf">Approximating s–t Minimum Cuts in Tilde O of N Squared Time</a></td>
+      <td><strong>Alan</strong></td>
+      <td> </td>
+      <td>Randomized Algorithms, Probability, Concentration Bounds, Graph Cuts, Parallel Algorithms</td>
+      <td><a href="https://people.inf.ethz.ch/gmohsen/AA19/Notes/S1.pdf">Scribe notes of Mohsen Ghaffari and Jakob von Kalle</a></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Oct 18 (Wed)</td>
+      <td>Tree Flow Sparsifiers</td>
+      <td><a href="https://www.cs.cornell.edu/~abrahao/tdg/papers/p255.pdf">Optimal Hierarchical Decompositions for Congestion Minimization in Networks</a></td>
+      <td><strong>Fahad</strong></td>
+      <td>Makes use of tree embeddings from two weeks ago. For applications feel free to only do oblivious routing. Ellis away at workshop; <a href="https://cs.brown.edu/people/ycheng79/">Yu Cheng</a> to sub</td>
+      <td>Randomized Algorithms, Probability, Concentration Bounds, Graph Flows, Distributed Algorithms</td>
+      <td>Chapter 15.2 of <a href="https://www.designofapproxalgs.com/book.pdf">this book</a></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Oct 25 (Wed)</td>
+      <td>Expander Decompositions and Pruning</td>
+      <td><a href="https://arxiv.org/abs/1812.08958">Expander Decomposition and Pruning: Faster, Stronger, and Simpler</a></td>
+      <td><strong>Binhao+Ryan</strong></td>
+      <td>Feel free to ignore appendices</td>
+      <td>Expanders, Graph Flows, Dynamic Algorithms</td>
+      <td><a href="https://www.youtube.com/watch?v=4X6JW8wU-EI">Tutorial 1</a> and <a href="https://www.youtube.com/watch?v=8VtQskg34mk">Tutorial 2</a> of Thatchaphol Saranurak on expander decompositions. See also relevant talks from <a href="https://www.youtube.com/playlist?list=PLVw32sKsg0Ntcr6mRvPhvY71_xSkFMHHg">this class</a></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Nov 1 (Wed)</td>
+      <td><s>Dynamic Tree Flow Sparsifiers (The Expander Hierarchy)</s><br /><br /> Steiner Point Removal Lower Bound</td>
+      <td><a href="https://arxiv.org/pdf/2310.07862.pdf"></a> <a href="https://arxiv.org/abs/2005.02369"><s>The Expander Hierarchy and its Applications to Dynamic Graph Algorithms</s></a><br /><br /> <a href="https://arxiv.org/pdf/2310.07862.pdf">A Tilde Omega Root Log |T| Lower Bound for Steiner Point Removal</a></td>
+      <td><strong>Apoorv</strong></td>
+      <td><s>Makes use of expander decompositions / pruning ideas from previous week. Quite lengthy. Focus just on first 5 sections, sketch 7 and 8 and only present 1 application from section 9 </s><br /><br /> Quite short. Gives the first non-constant lower bound for SPR as defined in previous week.</td>
+      <td><s>Expanders, Graph Flows, Dynamic Algorithms</s><br /><br /> Randomized Algorithms, Probability, Concentration Bounds</td>
+      <td><s>Same as previous week</s><br /><br /> Similar to the Theorem 4.1 construction in <a href="https://epubs.siam.org/doi/pdf/10.1137/S0097539701395978">this paper</a>; may or may not be helpful to look at.</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Matching Sparsification</strong></td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Nov 8 (Wed)</td>
+      <td>Edge-Degree-Constrained Subgraphs</td>
+      <td><a href="https://aaronbernstein.cs.rutgers.edu/wp-content/uploads/sites/43/2018/12/SODA_2016.pdf">Faster Fully Dynamic Matchings with Small Approximation Ratios</a></td>
+      <td><strong>Francisco</strong></td>
+      <td>Ellis away at conference, <a href="https://cs.brown.edu/people/ycheng79/">Yu Cheng</a> to sub</td>
+      <td>Matching Theory, Approximation Algorithms, Dynamic Algorithms</td>
+      <td><a href="https://www.youtube.com/watch?v=-4of1ZSYbKQ">This talk</a> by Aaron Bernstein</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Coloring Sparsification</strong></td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Nov 15 (Wed)</td>
+      <td>Palette Sparsification</td>
+      <td><a href="https://arxiv.org/abs/1807.08886">Sublinear Algorithms for (Δ + 1) Vertex Coloring</a></td>
+      <td><strong>Klimentina</strong></td>
+      <td> </td>
+      <td>Randomized Algorithms, Probability, Concentration Bounds, Streaming Algorithms, Sublinear algorithms, Parallel Algorithms</td>
+      <td><a href="https://www.youtube.com/watch?v=Av569Px1UWY">This talk</a> by Sanjeev Khanna</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Nov 22 (Wed)</td>
+      <td>No class, Thanksgiving Break</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Fractional Optima Sparsity</strong></td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Nov 29 (Wed)</td>
+      <td>Survivable Network Design</td>
+      <td><a href="https://link.springer.com/article/10.1007/s004930170004">A Factor 2 Approximation Algorithm for the Generalized Steiner Network Problem</a></td>
+      <td><strong>Bin</strong></td>
+      <td> </td>
+      <td>Linear Algebra, Linear Programs, Approximation Algorithms, Network Design Algorithms, Uncrossing</td>
+      <td><a href="https://www.contrib.andrew.cmu.edu/~ravi/book.pdf">This book on iterative rounding</a>. See 4.1 for the simplest application of iterative rounding (that I know of) to a problem (here minimum spanning tree).</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Dec 6 (Wed)</td>
+      <td>Bounded Degree Spanning Trees</td>
+      <td><a href="https://math.mit.edu/~goemans/PAPERS/bmst-focs06.pdf">Minimum Bounded Degree Spanning Trees</a></td>
+      <td><strong>Richard</strong></td>
+      <td> </td>
+      <td>Linear Algebra, Linear Programs, Network Design Algorithms, Approximation Algorithms, Uncrossing, Graph Arboricity</td>
+      <td>Same as previous week</td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="grading">Grading:</h3>
+<ul>
+  <li>90% presentation, feedback form with talk goals <a href="/teaching/fall23Seminar/talkRubricFillable.pdf">here</a>.</li>
+  <li>10% in-class participation</li>
+</ul>
+
+<h3 id="other-resources">Other Resources</h3>
+<p><strong>Some Good Talks</strong></p>
+
+<p>Here are some example talks by people I feel generally give good talks. I’ve tried to choose topics across a variety of areas of algorithms. I haven’t watched all of the below.</p>
+
+<ul>
+  <li><a href="https://www.youtube.com/watch?v=a4y0u6mgFYU">Roie Levin (Brown Alum!) on Random Order Set Cover is as Easy as Offline</a> (online, approximation algorithms)</li>
+  <li><a href="https://www.youtube.com/watch?v=3_6A_Qof9MI">Ellen Vitercik on How Much Data is Sufficient to Learn High-Performing Algorithms?</a> (machine-learned algorithms)</li>
+  <li><a href="https://www.youtube.com/watch?v=4tTdU08_YBo&amp;list=PLVw32sKsg0NuBGS8rqsRFxKAq5pYhzd2K">Thatchaphol Saranurak on Recent Applications of Expanders to Graph Algorithms</a> (fast sequential, dynamic, distributed algorithms)</li>
+  <li><a href="https://www.youtube.com/watch?v=_nVHZT1onlU">Merav Parter on Graph Shortcuts: New Bounds and Algorithms</a> (parallel, distributed, dynamic algorithms)</li>
+  <li><a href="https://www.youtube.com/watch?v=svTs3yJl7-8">Jelani Nelson on Recent Advances in Streaming and Private Heavy Hitters</a> (sketching, streaming algorithms)</li>
+  <li><a href="https://www.youtube.com/watch?v=HUYUQJQm_10">Anupam Gupta on Robust Algorithms for Secretaries and Bandits</a> (online, approximation algorithms)</li>
+  <li><a href="https://www.youtube.com/watch?v=nMSIEoRQvvI">Rico Zenklusen on Approximation Algorithms for Hard Augmentation Problems</a> (approximation, network design algorithms)</li>
+</ul>
+
+<p><strong>Some Links About Doing/Writing/Reading/Presenting Theory/Math:</strong></p>
+
+<p>Here are some more general links to both talks and blog-post-type writings of various theoreticians and mathematicians that you might find useful.</p>
+
+<ul>
+  <li><a href="https://www.cs.cmu.edu/~anupamg/speaking.html">Anupam Gupta on presenting theory</a></li>
+  <li><a href="https://www.youtube.com/watch?v=YFUIPg8P2sY">Talk by Ryan O’Donnell on doing/reading/presenting theory</a></li>
+  <li><a href="https://web.eecs.umich.edu/~nswein/article.html">Nicole Wein on doing theory as an early-stage PhD</a></li>
+  <li><a href="https://math.stanford.edu/~vakil/threethings.html">Ravi Vakil’s three things exercise for attending talks</a></li>
+  <li><a href="https://math.stanford.edu/~vakil/potentialstudents.html">Ravi Vakil’s general advice (for math PhD students)</a></li>
+  <li><a href="https://terrytao.wordpress.com/career-advice/">Overview of various relevant blog posts by Terry Tao on career advice</a></li>
+  <li><a href="https://terrytao.wordpress.com/advice-on-writing-papers/">Overview of various relevant blog posts by Terry Tao on writing papers</a></li>
+</ul>
+
+<h3 id="accommodations">Accommodations</h3>
+<p>If you feel you have a disability that could affect your performance in the course, please contact <a href="https://www.brown.edu/campus-life/support/accessibility-services/">SAS</a> and ask them to contact me. I’ll do whatever I can to support recommended accommodations.</p>
+
+<h3 id="student-well-being">Student Well-Being</h3>
+
+<p>Doing theory is extremely difficult if you aren’t feeling physically and mentally well, included and supported by your peers and mentors or otherwise marginalized.</p>
+
+<p>My hope is that this is a welcoming and inclusive course. If you feel you have been mistreated please feel free to contact me directly or consider reaching out to some of the <a href="https://cs.brown.edu/about/diversity/">student advocates in the department</a>. If you feel you might be the victim of harassment, consider reaching out to the <a href="https://www.brown.edu/about/administration/title-ix/">Brown Title IX Office</a>.</p>
+
+<p>If you feel you are overstretched or otherwise psychologically distressed I encourage you to reach out to <a href="https://caps.brown.edu/">Brown CAPS</a>. You may also find <a href="https://cs.brown.edu/media/filer_public/03/0a/030a6a2e-7a61-4c30-98c1-dce87b9d9899/brown_cs_health_and_wellness_resources.pdf">these resources from Brown Health and Wellness</a> (and links therein) useful.</p>
+</section>
+    </div>
+  </body>
+</html>

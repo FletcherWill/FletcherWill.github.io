@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+{% include head.html %}
+<body>
+  <div class="center">
+  	{% unless page.standalone %}
+    	{% include header.html %}
+    {% endunless %}
+
+    <div class="p2" role="main">
+      <div class="measure">
+        {{ content }}
+      </div>
+    </div>
+  </div>
+
+  {% include footer.html %}
+</body>
+</html>

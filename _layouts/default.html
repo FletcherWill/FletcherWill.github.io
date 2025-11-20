@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+{% include head.html %}
+<body>
+  <div class="mb4">
+  	<!-- {% if page.standalone %} -->
+  		<div class="mb2"></div>
+  	<!-- {% else %} -->
+    	{% include header.html %}
+    <!-- {% endif %} -->
+
+    <div class="p2" role="main">
+      <div class="measure">
+        {{ content }}
+      </div>
+    </div>
+  </div>
+
+  {% include footer.html %}
+</body>
+</html>

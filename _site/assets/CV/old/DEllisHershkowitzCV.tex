@@ -1,0 +1,343 @@
+
+\documentclass[letterpaper,11pt]{article}
+\newlength{\outerbordwidth}
+\pagestyle{empty}
+\raggedbottom
+\raggedright
+\usepackage[svgnames]{xcolor}
+\usepackage{framed}
+\usepackage{tocloft}
+\usepackage{calc}
+\usepackage{array}
+\usepackage[normalem]{ulem}
+\usepackage{enumitem}
+\usepackage{hyperref}
+%\usepackage{lmodern} % Sets the font
+
+%-----------------------------------------------------------
+%Edit these values as you see fit
+
+\setlength{\outerbordwidth}{3pt}  % Width of border outside of title bars
+\definecolor{shadecolor}{gray}{0.75}  % Outer background color of title bars (0 = black, 1 = white)
+\definecolor{shadecolorB}{gray}{0.93}  % Inner background color of title bars
+
+
+%-----------------------------------------------------------
+%Margin setup
+
+\setlength{\evensidemargin}{-0.25in}
+\setlength{\headheight}{0in}
+\setlength{\headsep}{0in}
+\setlength{\oddsidemargin}{-0.25in}
+\setlength{\paperheight}{11in}
+\setlength{\paperwidth}{8.5in}
+\setlength{\tabcolsep}{0in}
+\setlength{\textheight}{9.5in}
+\setlength{\textwidth}{5.7 in} % Determines how far to right text can go
+\setlength{\topmargin}{-0.3in}
+\setlength{\topskip}{0in}
+\setlength{\voffset}{0.1in}
+
+%Horizontalspacing
+\def \subSecHeaderWidth {-7}
+\def \subSecSubHeaderWidth{-3}
+\def \textItemIndent{1}
+\def \pubindent{4}
+\def \txtindent{4}
+%\def \indenttxtindent{10} see the actual command definition
+
+
+%Verticle spacing of sections
+\def \afterHeader{-5}
+
+\def \beforeSecHeader{5}
+\def \afterSecHeader{3}
+
+\def \beforeSubSecHeader{-4}
+\def \afterSubSecHeader{-4}
+
+\def \beforeTextSection{-5}
+\def \afterTextSection{-3}
+
+\def \beforepublication{2}
+\def \afterpublication{0}
+
+\def \beforetxt{1}
+\def \aftertxt{0}
+
+%-----------------------------------------------------------
+%Custom commands
+
+
+%Header: <name>, <degree>, <email>, <address line 1>, <address line 2>
+\newcommand{\header}[4]{
+\begin{center}
+\textbf{\huge #1}\\
+\vspace{1mm}
+ #2\\
+\end{center}
+\vspace{\afterHeader mm}
+}
+
+\def\Vrulefill#1#2#3{
+	\leavevmode%
+	\hskip-.2in%
+	\leaders%
+	\vtop{\hsize=#3mm\vskip#1#2}
+	\hfill%
+	\hskip.3in%
+}
+
+%sectionHeader
+\newcommand{\secHeader}[1]{ \vspace{\beforeSecHeader mm}
+
+{\hspace{-4mm}\large \textbf{#1}}\\
+\vspace{-3mm}
+\Vrulefill{0mm}{.}{1}%vert offset symbol, spacing
+\vspace{\afterSecHeader mm}}
+
+%subSectionHeader: <Employer>, <Time>, <Title>, <location>
+\newcommand{\subSectionHeader}[4]{
+\vspace{\beforeSubSecHeader mm}
+\begin{itemize}
+
+\item[]
+\begin{tabular*}{6.5in}{l@{\cftdotfill{\cftsecdotsep}\extracolsep{\fill}}r}
+		\hspace{\subSecHeaderWidth mm}\textbf{#1} & #2 \\
+		\hspace{\subSecSubHeaderWidth mm}{\it \bf #3} & \textit{#4} \\
+\end{tabular*}
+\end{itemize}
+\vspace{\afterSubSecHeader mm}
+}
+
+%textSection(TS):
+\newcommand{\TS}[0]{
+\begin{itemize}[noitemsep,topsep=.5pt]
+\vspace{\beforeTextSection mm}
+\setlength{\leftmargin}{0.25in}
+}
+
+
+%textSection(TSI)
+\newcommand{\TSI}[1]{
+\item [\tiny$\bullet$] #1
+}
+
+\newcommand{\ETS}[0]{
+\end{itemize}
+\vspace{\afterTextSection mm}
+}
+
+\newcommand{\TSA}[1]{
+\item[] {#1}
+}
+
+%PUB
+\newcommand{\PUB}[4] {
+\vspace{\beforepublication mm}
+\hangindent=\pubindent mm\href{#4}{\hspace{\pubindent mm} \underline{#2}\\ \hspace{\pubindent mm} \hspace{\pubindent mm} (with #1)\\ \hspace{\pubindent mm} \hspace{\pubindent mm} \textit{#3}.}
+\vspace{\afterpublication mm}
+}
+
+%TXT
+\newcommand{\TXT}[1] {
+\vspace{\beforetxt mm}
+\hspace{\txtindent mm}\hangindent=\txtindent mm #1\\
+\vspace{\aftertxt mm}
+}
+
+%INDTXT
+\newcommand{\INDTXT}[1] {
+\vspace{\beforetxt mm}
+\hspace{10 mm} \hangindent=12.5 mm - #1\\
+\vspace{\aftertxt mm}
+}
+
+%---BEGIN DOCUMENT--------------------------------------------------------
+\begin{document}
+%Different fonts:
+%\sffamily
+%\ttfamily
+
+\header{D Ellis Hershkowitz}
+{dellishershkowitz@gmail.com}
+{12 Roger St.}
+{Providence RI, 02906}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\secHeader{EDUCATION} \vspace{\beforeSubSecHeader mm}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subSectionHeader{Carnegie Mellon University}{Pittsburgh, PA}{Ph.D. Computer Science, Advised by \href{http://www.cs.cmu.edu/~haeupler/}{Bernhard Hauepler}}{Fall 2016-}
+\vspace{-\beforeSubSecHeader mm}
+\subSectionHeader{Brown University}{Providence, RI}{M.S. Computer Science}{Class of 2016}
+%\INDTXT{Relevant courses: Sequential Decision Making, Multiprocessor Synchronization, Cryptography, Computability and Logic.}
+\INDTXT{GPA: 4.0}
+\vspace{\beforeSubSecHeader mm}
+\subSectionHeader{}{}{B.A. Computer Science, Honors Recipient; B.A. Philosophy}{Class of 2015}
+\INDTXT{GPA: 4.0}
+%\INDTXT{Relevant courses: Advanced Topics in Algorithms, Artificial Intelligence, Algorithms, Models of Computation, Statistical Inference I/II, Computer Systems, Discrete Math, Linear Algebra, Deductive Logic.}
+
+%\subSectionHeader{Pomona College}{Claremont, CA}{Undergraduate Freshman Year}{2011 - 2012}
+%\INDTXT{GPA: 3.96}
+%\INDTXT{Relevant courses: Multivariable Calculus.}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\secHeader{RESEARCH INTERESTS}
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\vspace{-\beforeSubSecHeader mm}
+%I am broadly interested in theoretical computer science: I mostly work in distributed graph algorithms and approximation algorithms. In the past I've worked on: noisy variants of the radio broadcast model; simultaneously round- and  message-optimal distributed graph algorithms; models of two-stage optimization that interpolate between stochastic and adversarial models; models of distributed computation that optimize for the toal amount of computation performed. Topics that I hope to explore include: models of distributed computation that assume non-negligible cost for computation; applications of complexity-theoretic tools to distributed models. In a past life I also worked on abstraction in reinforcement learning.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\secHeader{PUBLICATIONS}\vspace{-8 mm}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%Emax
+\PUB
+{Sahil Singla, R Ravi}{Prepare for the Expected Worst:
+	New Two-Stage Covering Models and Algorithms}{Preprint}{}
+
+%Organizational strucutre
+\PUB
+{Bernhard Haeupler, Anson Kahng, Ariel Procaccia}{A Computational Approach to Organizational Structure}{arXiv Preprint}{https://arxiv.org/pdf/1806.05701.pdf}
+
+%Erasure correction for radio networks
+\PUB
+{Keren Censor-Hillel, Bernhard Haeupler, Goran Zuzic}{Erasure Correction for Noisy Radio Networks}{arXiv Preprint}{https://arxiv.org/pdf/1805.04165.pdf}
+
+%Low message shortcuts
+\PUB
+{Bernhard Haepler, David Wajc}{Round- and Message-Optimal Distributed Graph Algorithms}{Principles of Distributed Computing (PODC) 2018}{https://arxiv.org/pdf/1801.05127.pdf}
+
+%Robust Radio Broadcast
+\PUB
+{Keren Censor-Hillel, Bernhard Haeupler, Goran Zuzic}{Broadcasting in Noisy Radio Networks}{Principles of Distributed Computing (PODC) 2017}{https://arxiv.org/pdf/1705.07369.pdf}
+
+%ICML
+\PUB
+{David Abel, Michael Littman}{Near Optimal Behavior via Approximate State Abstraction}
+{International Conference on Machine Learning (ICML) 2016}
+{https://arxiv.org/pdf/1701.04113.pdf}
+
+%ICAPS
+\PUB
+{David Abel, \ldots, Stefanie Tellex}{Goal-based Action Priors}
+{Int'nl Conference on Automated Planning and Scheduling (ICAPS) 2015}
+{https://www.aaai.org/ocs/index.php/ICAPS/ICAPS15/paper/view/10589}
+
+%AAAI Fall Symposia
+%\PUB
+%{\textbf{D Ellis Hershkowitz.}, James MacGlashan, Stefanie Tellex}
+%{Learning Propositional Functions for Planning and Reinforcement Learning}
+%{Association for the Advancement of Artificial Intelligence 2015 Fall Symposium on Sequential Decision Making}
+%{http://www.aaai.org/ocs/index.php/FSS/FSS15/paper/view/11654}
+
+%Undergrad Thesis
+%\PUB
+%{\textbf{D Ellis Hershkowitz}}
+%{Leveraging and Learning Propositional Functions for Large State Spaces in Planning and Reinforcement Learning}
+%{Undergraduate Honors Thesis (Advisor: Prof. Stefanie Tellex, Second Reader: Prof. Michael Littman)}
+%{http://cs.brown.edu/research/pubs/theses/ugrad/2015/hershkowitz.ellis.pdf}
+
+%NIH 
+%\PUB
+%{J.S. Kippenhan, N. Turner, \textbf{D Ellis Hershkowitz}, M. Gregory, P. Kohn, D. Dickinson, V. Mattay, D. Weinberger, K. Berman}
+%{Structural-Covariance-Based Parcellation of Intraparietal Sulcus Related to Visuospatial Ability}
+%{2014 Human Brain Mapping Abstract}
+%{}
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\secHeader{RESEARCH EXPERIENCE}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subSectionHeader{Carnegie Mellon University, \href{http://www.cs.cmu.edu/~haeupler/}{Prof. Bernhard Hauepler}}{Pittsburgh, PA}{Ph.D. Research}{Fall 2016-}
+%\INDTXT{Formulated reliable information dissemination algorithms for the radio broadcast model in the presence of noise.}
+%\INDTXT{Exploring how efficiently any protocol in the radio broadcast model can be made robust to noise.}
+
+\subSectionHeader{Brown University R.L. Group, \href{http://cs.brown.edu/~mlittman/}{Prof. Michael Littman}}{Providence, RI}{Master's Research}{Fall 2015-Fall 2016}
+%\INDTXT{Explored theoretical properties of abstraction methods in sequential decision making.}
+
+\subSectionHeader{\href{http://h2r.cs.brown.edu/}{Brown University Humans to Robots Lab}, \href{http://people.csail.mit.edu/stefie10/}{Prof. Stefanie Tellex}}{Providence, RI}{Undergraduate Research}{Spring 2014-Fall 2016}
+
+%\INDTXT{Developed representation-learning algorithms for sequential decision making.}
+%\INDTXT{Investigated predicate-based clustering as a means of predicting sub-goals.}
+%\INDTXT{Formulated machine-learned action pruning schemes in stochastic planning.}
+%\INDTXT{Managed weekly lab meetings: e.g. scheduling presentations.}
+
+\subSectionHeader{National Institutes of Health}{Bethesda, MD}{Summer Research Intern, \href{http://www.nimh.nih.gov/labs-at-nimh/research-areas/clinics-and-labs/index.shtml}{Section on Integrative Neuroimaging}}{Summer 2013}
+%\INDTXT{Implemented machine learning algorithms to perform structural and functional divisions of gray matter data to examine neurological effects of aberrant genes. Presented findings at NIH Research Fair.}
+
+\vspace{\beforeSubSecHeader mm}
+\subSectionHeader{}{}{Summer Research Intern, Molecular Genetics Unit}{Summers 2010, 2012}
+	
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\secHeader{INDUSTRY EXPERIENCE}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subSectionHeader {Google Inc.}{Mountain View, CA}{Software Engineering Intern, Apps Discovery Team}{Summer 2015}
+
+%\INDTXT{Engineered recommendation system for content discovery in Google Play Store.}
+\subSectionHeader{\href{https://chaienergy.com/}{Chai Energy}}{Los Angeles, CA}{Backend Data Analyst (part time)}{Spring 2014-Fall 2014}
+%\TS
+%\vspace{-5mm}
+%\TSA{\hspace{-7.5mm}Home energy monitoring startup, Microsoft's Connected Home Accelerator member.}
+%\vspace{-4.5mm}
+%\ETS
+%\subSectionHeader{}{}{Backend Data Analyst}{Spring 2014-Fall 2015}
+%\vspace{0mm}
+%\INDTXT{Created machine learning algorithms to determine heating appliance usage.}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\secHeader{TEACHING EXPERIENCE}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subSectionHeader {Carnegie Mellon Computer Science Department}{Pittsburgh, PA}{Graduate Teaching Assistant, Graduate Complexity Theory (\href{http://www.cs.cmu.edu/~odonnell/complexity17/}{15-855})}{Fall 2017}
+%\INDTXT{TBD.}
+
+\vspace{\beforeSubSecHeader mm}
+\subSectionHeader {}{}{Graduate Teaching Assistant, Undergraduate Complexity (\href{http://www.cs.cmu.edu/~15455/}{15-455})}{Spring 2017}
+%\INDTXT{Held office hours and graded.}
+
+\subSectionHeader {Brown University Department of Computer Science}{Providence, RI}{Teaching Assistant, Introduction for Non-Majors (\href{http://cs.brown.edu/courses/cs008/}{CS8})}{Spring 2016}
+%\INDTXT{Oversaw course development including machine learning and algorithms labs and homeworks.}
+%\INDTXT{Held office hours, graded tests and homeworks, responded to student emails.}
+
+\vspace{\beforeSubSecHeader mm}
+\subSectionHeader {}{}{Teaching Assistant, Artificial Intelligence (\href{http://cs.brown.edu/courses/cs141/}{CS141})}{Fall 2014}
+%\INDTXT{Oversaw course development including writing midterm and final problems as well as a supervised learning project.}
+%\INDTXT{Held office hours, graded tests, projects and homework, responded to student emails.}
+
+\vspace{\beforeSubSecHeader mm}
+\subSectionHeader {}{}{Teaching Assistant, Integrated Intro to CS (\href{http://cs.brown.edu/courses/cs017/}{CS17,  \href{http://cs.brown.edu/courses/cs018/}{CS18}})}{Fall 2013, Spring 2014}
+%\INDTXT{Held office hours, graded tests and homework, taught lab, responded to student emails, and spread my love of Computer Science.}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\secHeader{AWARDS}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\TXT{NSF GRFP Honorable Mention 2016}
+\TXT{Elected ``Great Teaching Assistant" by department peers for Artificial Intelligence}
+\TXT{\href{http://cs.brown.edu/degrees/undergrad/concentrations/honors.html}
+		{Brown Computer Science Undergraduate Honors Degree}}
+\TXT{\href{https://www.brown.edu/academics/college/degree/honors}{Magna Cum Laude 2015 (highest university honors)}}
+\TXT{\href{http://www.brown.edu/research/sigma-xi-society/}
+		{Sigma Xi 2015}}
+%\TXT{\href{http://www.pomona.edu/administration/academic-dean/student-awards}{Pomona College Scholar}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\secHeader{OTHER ACTIVITIES AND INTERESTS}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\TXT{Analytic Philosophy -- especially early 20th century logicism.}
+%\TXT{Amateur Powerlifting and other feats of athletics for which enthusiasm compensates for a lack of innate talent.}
+%\TXT{Russian literature and contemporary fiction.}
+%\TXT{Playing guitar.}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\secHeader{Professional Service}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\TXT{Organized \href{http://www.cs.cmu.edu/~./theorylunch/}{CMU's Theory Lunch} Fall 2017-Spring 2018}
+\TXT{Reviewed Papers For: \href{https://stacs2018.sciencesconf.org/}{STACS 2018}; \href{http://www.disc-conference.org/wp/disc2018/}{DISC 2018}; \href{https://archive.siam.org/meetings/da19/}{SODA 2019}.}
+
+
+\end{document}

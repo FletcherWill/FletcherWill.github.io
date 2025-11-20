@@ -1,0 +1,20 @@
+
+<div class="paperLineTitle"><div class="paperTitle">{{ include.title}}<span class="conferenceShort">{{include.shortVenue}}</span></div></div>
+
+<div class="paperLineTitle">{{include.titleSecond}}</div>
+
+<div class="paperLineAuthors">with {{include.authors}}</div>
+
+{% if include.venue != nil %} <div class="conferenceLong"><i> ({{include.venue}}) </i></div> {% endif %}
+
+{% if include.award != nil %} <div class="award">{{include.award}} </div> {% endif %}
+
+
+{% if include.pdfLink != nil or include.talkLink != nil or include.slidesLink != nil %}<div>[{% if include.pdfLink != nil %}<a href="{{include.pdfLink }}">pdf</a>{% endif %}{% if include.talkLink != nil %}, <a href="{{ include.talkLink }}">talk</a>{% endif %}{% if include.slidesLink != nil %}, <a href="{{ include.slidesLink }}">slides</a>{% endif %}]</div>{% endif %}
+
+
+{% if include.figure != nil %}<p></p>
+<div class="figure">
+	<img src="{{site.figuresurl | relative_url}}{{include.figure}}">
+</div>
+{% endif %}

@@ -1,0 +1,25 @@
+.figure{
+  position: relative;
+  width: auto;
+  height: auto;
+  overflow: hidden;
+  border-radius: 40px;
+  border: 4px solid $figure-border-color;
+  min-width: 0px;
+  min-height: 0px;
+  // margin-left: 310px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1em;
+  margin: 2em;
+  background-color: #ffffff;
+}
+
+.figure-picture img{
+  width: 100%;
+  height: 100%;
+  height: auto;
+  transform: scale(1.5,1.5);
+  padding-top: 44px;
+  padding-bottom: 20px;
+}
